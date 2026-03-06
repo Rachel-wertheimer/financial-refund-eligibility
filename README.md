@@ -33,7 +33,7 @@
 ### שלב 1: הורדת הפרויקט
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/Rachel-wertheimer/financial-refund-eligibility.git
 cd FinancialEligibilityTask
 ```
 
@@ -165,11 +165,11 @@ FinancialEligibilityTask/
 
 ---
 
-## יצירת פקיד ראשוני
+## בעקבות שאין מערכת לניהול הפקידים והתקציבים עליך
 
-לאחר יצירת מסד הנתונים, יש ליצור פקיד ראשוני:
+לאחר יצירת מסד הנתונים,:
 
-### בשביל להשתמש כפקיד במערכת בעקבות שאין מערכת לניהול פקידים עליך להריץ:
+### ליצור פקיד ראשוני
 1. הרץ את צד הBACK והרץ את הENTRYPOINT הבאה
 ```bash
 POST https://localhost:44384/api/clerks/create
@@ -178,11 +178,13 @@ POST https://localhost:44384/api/clerks/create
   "password": "הכנס סיסמה לבחירתך"
 }
 ```
- 2. פתח את SQL Server Management Studio
-    2. צור מסד נתונים חדש בשם `RefundSystemDb`
+### להגדיר תקציבים  
+
+    1. פתח את SQL Server Management Studio
+    2. צור רשומה חדשה בטבלת `MonthlyBudgets`
     3. הרץ את ה-Scripts הבאים בסדר:
 
-   - `Backend/SQL/MonthlyBudgets.sql` - Stored Procedure להכנסת נתונים של תקציב לחודש
+   - `Backend/SQL/MonthlyBudgets.sql` - Script  להכנסת נתונים של תקציב לחודש
 
 
 ---
