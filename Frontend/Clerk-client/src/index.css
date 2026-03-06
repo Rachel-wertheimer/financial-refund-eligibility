@@ -1,0 +1,116 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    margin: 0;
+    font-family: 'Inter', 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    direction: rtl;
+    background-color: #f5f7fa;
+    color: #1a1a1a;
+  }
+}
+
+@layer components {
+  /* Primary Button */
+  .btn-primary {
+    background-color: #0f2a44;
+    color: white;
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    transition: all 0.2s;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  }
+  .btn-primary:hover {
+    background-color: #0a1f33;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+  }
+  .btn-primary:active {
+    transform: scale(0.95);
+  }
+
+  /* Secondary Button */
+  .btn-secondary {
+    background-color: white;
+    color: #0f2a44;
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    border: 2px solid #0f2a44;
+    transition: all 0.2s;
+  }
+  .btn-secondary:hover {
+    background-color: #f5f7fa;
+  }
+  .btn-secondary:active {
+    transform: scale(0.95);
+  }
+
+  /* Card */
+  .card {
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+    padding: 1.5rem;
+    border: 1px solid #f3f4f6;
+  }
+
+  /* Input Field */
+  .input-field {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+    text-align: right;
+    transition: all 0.2s;
+  }
+  .input-field:focus {
+    outline: none;
+    border-color: #0f2a44;
+    box-shadow: 0 0 0 2px rgba(15, 42, 68, 0.2);
+  }
+
+  /* Label */
+  .label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 0.5rem;
+    text-align: right;
+  }
+
+  /* Table */
+  .table-container {
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+    overflow: hidden;
+  }
+
+  .table-header {
+    background-color: #0f2a44;
+    color: white;
+    font-weight: 600;
+  }
+
+  .table-row {
+    border-bottom: 1px solid #e5e7eb;
+    transition: background-color 0.15s;
+  }
+  .table-row:hover {
+    background-color: #f9fafb;
+  }
+  .table-row:nth-child(even) {
+    background-color: #f9fafb;
+  }
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
