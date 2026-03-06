@@ -49,8 +49,8 @@ Backend/Web API/
 **Request Body:**
 ```json
 {
-  "username": "רחל ורטהימר",
-  "password": "ר214ו"
+  "username": "ישראל ישראלי",
+  "password": "123456..."
 }
 ```
 
